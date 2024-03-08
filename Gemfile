@@ -11,6 +11,10 @@ gem 'turbolinks', '5.2.0'
 gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.10.3', require: false
 
+group :production do
+  gem 'pg', '1.1.4'
+end
+
 group :development, :test do
   gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
